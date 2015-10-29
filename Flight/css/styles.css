@@ -1,1 +1,34 @@
 /* Your styles should go here */
+.check {
+  padding-bottom: 20px;
+}
+
+table {
+  table-layout: fixed;
+  width: 50em;
+}
+
+.scheduled {
+  color: #00CC00;
+}
+
+.delayed {
+  color: #CC0000;
+}
+
+.boarding {
+  color: #CC9933;
+}
+
+.cancelled {
+  color: #999999;
+}
+
+body {
+  color: #333333;
+}
+
+.first-row {
+  background-color: #3366CC;
+  color: white;
+}

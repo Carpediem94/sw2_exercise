@@ -3,9 +3,27 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Put your js and css references here -->
+  <link rel="stylesheet" href="css/styles.css">        
+  <script src="lib/jquery-2.1.0.min.js"></script>         
+  
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script> 
 </head>
 
 <body>
+  <div class="check">
+    <h3>FlightStatus</h3>
+    <form>
+      Scheduled<input type="checkbox" value="scheduled" checked>
+      Boarding<input type="checkbox" value="boarding" checked>
+      Cancelled<input type="checkbox" value="cancelled" checked>
+      Delayed<input type="checkbox" value="delayed" checked>
+    </form>
+  </div>
+  
+  <div>
+    <table class="tab"></table>
+  </div>
 </body>
 
 </html>
