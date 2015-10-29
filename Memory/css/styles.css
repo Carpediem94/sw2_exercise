@@ -41,7 +41,7 @@ h1 > span{
   display: none;
 }
 .cards > .hidden  {
-  background-image: url(img/bg.png);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
