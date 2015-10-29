@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa|Courgette);
+
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+h1 > span{
+  font-family: 'Courgette', cursive;
+  color: #c12f2f;
+}
+
+.cards {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.cards > li{
+  width: 200px;
+  height: 200px;
+  background: #efefef;  
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;  
+  border: 2px solid #a5a4a4;
+}
+
+.cards > li h3 {
+  font-size: 3em;
+}
+
+.cards > .hidden h3 {
+  display: none;
+}
+.cards > .hidden  {
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards > .selected  {
+  border: 2px solid #dd8815;
+}
+
+.cards > .done {
+  opacity: 0.5;
+}
+
+.options {
+  text-align: center;
+}
+.options > button{
+  font-size: 1.5em;
+}
+
