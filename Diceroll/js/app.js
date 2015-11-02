@@ -1,5 +1,5 @@
 /* Main Dicerool file */
-var dice;
+var dice = 0;
 var dado;
 
 $(document).ready(function(){  
@@ -7,13 +7,18 @@ $(document).ready(function(){
   
   $('.btn-start').click(function() {
     dice = $('#dice').val();
-    //alert("number of dices: " + dice);
-    //e.preventDefault();
-    
-    for(var i=0; i<dice; i++) {
-      $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
+    if (dice<1 || dice>9) {
+      alert("inserisci un numero compreso tra 1 e 9");
+    } else {
+      //alert("number of dices: " + dice);
+      //e.preventDefault();
+
+      for(var i=0; i<dice; i++) {
+        $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
+      }
+      $('.btn-roll').show();
+      $('.txt').hide();
     }
-    $('.btn-roll').show();
   });
   /*
   $('.btn-start').on( "click", function() {

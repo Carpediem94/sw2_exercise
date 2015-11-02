@@ -3,6 +3,7 @@
 body {
     font-family: "Gafata", "Helvetica", "Serif";
     margin: 0px;
+    text-align: center;
 }
 
 /* Header and footer */
@@ -31,10 +32,22 @@ footer {
     width: 100%;
 }
 
-footer p{
+footer p {
     color: white;
     text-align: center;    
 }
 
+.txt {
+  padding-top: 15%;
+}
 
+/*#dadi {
+ width:100%;
+ height:100%;
+}*/
+
+table {
+  margin: 0 auto; /* or margin: 0 auto 0 auto */
+  margin-top: 10%;
+}
 
