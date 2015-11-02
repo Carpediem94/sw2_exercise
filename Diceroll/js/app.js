@@ -9,6 +9,7 @@ $(document).ready(function(){
     dice = $('#dice').val();
     if (dice<1 || dice>9) {
       alert("inserisci un numero compreso tra 1 e 9");
+      $('#dice').addClass('error');
     } else {
       //alert("number of dices: " + dice);
       //e.preventDefault();
@@ -20,17 +21,6 @@ $(document).ready(function(){
       $('.txt').hide();
     }
   });
-  /*
-  $('.btn-start').on( "click", function() {
-    dice = $('#dice').val();
-    //alert("number of dices: " + dice);
-    //e.preventDefault();
-    
-    for(var i=0; i<dice; i++) {
-      $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
-    }
-    $('.btn-roll').show();
-  });*/
   
   $(".btn-roll").click(function(){
     $('.tab').empty();
