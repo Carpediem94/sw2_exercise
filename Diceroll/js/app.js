@@ -5,19 +5,29 @@ var dado;
 $(document).ready(function(){  
   $('.btn-roll').hide();
   
-  $('.btn-start').click(function(e) {
+  $('.btn-start').click(function() {
     dice = $('#dice').val();
     //alert("number of dices: " + dice);
-    e.preventDefault();
+    //e.preventDefault();
     
     for(var i=0; i<dice; i++) {
       $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
     }
     $('.btn-roll').show();
   });
+  /*
+  $('.btn-start').on( "click", function() {
+    dice = $('#dice').val();
+    //alert("number of dices: " + dice);
+    //e.preventDefault();
+    
+    for(var i=0; i<dice; i++) {
+      $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
+    }
+    $('.btn-roll').show();
+  });*/
   
-  $(".btn-roll").click(function(event){
-    event.preventDefault();
+  $(".btn-roll").click(function(){
     $('.tab').empty();
     for(var i=0; i<dice; i++) {
       $('.tab').append("<td><img src=\"img/dice-" + roll() + ".png\"></td>");  
