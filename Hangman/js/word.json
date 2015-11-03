@@ -1,0 +1,10 @@
+var url = "http://randomword.setgetgo.com/get.php?callback=?";
+
+function RandomWord (callback) {
+  $.getJSON(url, function(data) {
+    word = data.Word;
+    console.log("word: " + word);
+    //inserisco tutto all'interno della mia funzione, di modo che la chiamata get avvenga prima di tutte
+    callback();
+  });
+}
