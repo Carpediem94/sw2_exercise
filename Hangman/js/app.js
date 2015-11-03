@@ -9,11 +9,11 @@ var sw = -1;
 var data;
 
 $(document).ready(function(){       
-   
+  $('#msg-w').hide();
+  $('#msg-l').hide(); 
+  
   RandomWord(function() {
 
-    $('#msg-w').hide();
-    $('#msg-l').hide();
     start();
 
     $('.btn-try').click(function() {
@@ -41,6 +41,7 @@ $(document).ready(function(){
           win++;
           if (win == word.length) {
             $('#msg-w').show();
+            $('.word').hide();
           }
         } else {
           $('#secret-word').append(maskedWord[i] + " ");
@@ -55,6 +56,7 @@ $(document).ready(function(){
         $('.hman').append("<img src=\"img/hman-" + h + ".png\">");
         if(h == 6) {
           $('#msg-l').show();
+          $('.word').hide();
         }
       }
     }
