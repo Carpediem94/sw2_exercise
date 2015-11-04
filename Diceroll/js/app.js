@@ -7,7 +7,7 @@ $(document).ready(function(){
   
   $('.btn-start').click(function() {
     dice = $('#dice').val();
-    if (dice<1 || dice>9) {
+    if (dice<1 || dice>9 || isNaN(dice)) {
       alert("inserisci un numero compreso tra 1 e 9");
       $('#dice').addClass('error');
     } else {
