@@ -1,20 +1,17 @@
-/* your code should go here */
-
-
-// Three main classes of cards:
-// done: when the user has discovered the pair of cards
-// hidden: when the card has not been discovered yet
 var id;
 var k = 1;
+var ver = false;
 
 $(document).ready(function(){
   start(); 
   
   $('button').click(function() {
     $('li').removeClass('done').addClass('hidden');
+    ver = true;
   });
   
   function start() {
+    ver = false;
     $('.cards').empty();
     data = generateData(10);
     for (var i=0; i<data.length; i++) {
@@ -23,8 +20,11 @@ $(document).ready(function(){
     k = 1;
     
     $('li').click(function() {
-      $(this).removeClass('hidden').addClass('done');
-      game(this);
+      if(ver) {
+        $(this).removeClass('hidden').addClass('done');
+        game(this);  
+      }
+      
     });
   }
   
