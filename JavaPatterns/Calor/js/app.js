@@ -63,7 +63,7 @@ $(document).ready(function(){
       var pos;
       for(var i=0; i<data.length; i++) {
         pos = octopus.getPos();
-        if(pos == data.length) {
+        if(pos >= data.length) {
           break;
         }
         day = data[pos].day;
