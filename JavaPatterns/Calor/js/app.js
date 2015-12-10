@@ -61,19 +61,22 @@ $(document).ready(function(){
     
     render: function() {
       var pos;
-      for(var i=0; i<4; i++) {
+      for(var i=0; i<data.length; i++) {
         pos = octopus.getPos();
+        if(pos == data.length) {
+          break;
+        }
         day = data[pos].day;
         this.meteo.append('<li>' +
-                        '<div class="icon">' +
-                          '<img src="img/icons/'+ data[pos].condition + '.png">' +      
-                        '</div>' +
-                        '<div class="stats">' +  
-                          '<h2>' + day + '</h2>' +
-                          '<strong>min</strong> ' + octopus.getTempMin(day) + ' ' +
-                          '<strong>max</strong> ' + octopus.getTempMax(day) +   
-                        '</div>' + 
-                      '</li>');
+                            '<div class="icon">' +
+                              '<img src="img/icons/'+ data[pos].condition + '.png">' +      
+                            '</div>' +
+                            '<div class="stats">' +  
+                              '<h2>' + day + '</h2>' +
+                              '<strong>min</strong> ' + octopus.getTempMin(day) + ' ' +
+                              '<strong>max</strong> ' + octopus.getTempMax(day) +   
+                            '</div>' + 
+                          '</li>');
         octopus.incrementPos();
       }
       
