@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa|Courgette);
+
+
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+h1 > span{
+  font-family: 'Courgette', cursive;
+  color: #c12f2f;
+}
+
+.sentences {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.sentences > li{
+  width: 100%;
+  height: 120px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;  
+  /*display: none;*/
+}
+
+.sentences > li h3 {
+  font-size: 3em;
+}
+
+.sentences > .current  {
+  display: block;
+}
+
+
+.options {
+  text-align: center;
+}
+.options > button{
+  font-size: 1.5em;
+}
+
+.solution {
+  color: brown;
+}
+
+.jumbotron {
+  min-height: 300px;
+  text-align: center;  
+}

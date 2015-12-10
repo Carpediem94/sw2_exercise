@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Put your js and css references here -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">  
+  <link rel="stylesheet" href="styles.css">          
+</head>
+
+<body>
+ <div class="container">
+   <h1><img src="img/logo.png"><span>Lingo</span></h1>
+
+      <div class="jumbotron">
+        
+        <!-- content of the lesson that should be visible during the practice -->
+        <div class="practice">
+          
+          <!-- sentences that are loaded dynamically -->
+          <ul class="sentences">
+              <!-- This is just an example, you should load this dynamically -->                                                                
+          </ul> 
+          
+          <!-- the area where the user enters the data -->
+          <div class="options">  
+            <p>
+              <input type="text" id="iSolution" class="form-control" placeholder="Insert the solution">                  
+            </p>
+            <p>
+              <button class="btn opt-continue">Continue</button>
+            </p>  
+          </div>
+        </div>
+        
+        <!-- the area that should be visible after the practice -->
+        <div class="final"></div>
+      
+      </div>
+  
+  <script src="jquery-2.1.0.min.js"></script>         
+  <script src="app.js"></script>        
+  <script src="data.js"></script>
+</body>
+</html>
