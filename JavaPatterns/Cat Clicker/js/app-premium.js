@@ -124,10 +124,6 @@ var viewCat = {
     this.img.setAttribute('width', '50%');
   }
 };
-
-var viewForm = {
-  
-};
   
 octopus.init();  
 });
